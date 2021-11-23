@@ -1,0 +1,17 @@
+{
+  "name": "blog-list-backend",
+  "version": "1.0.0",
+  "description": "A backend for the fullstack open couse part 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Jono Jones",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13"
+  }
+}
