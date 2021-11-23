@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const logger = require('../utils/logger')
 
 const blogSchema = new mongoose.Schema({
   title: String,
@@ -7,13 +8,13 @@ const blogSchema = new mongoose.Schema({
   likes: Number
 })
 
-console.log('connecting to ',process.env.MONGODB_URI)
+logger.info('connecting to ',process.env.MONGODB_URI)
 mongoose.connect(process.env.MONGODB_URI)
   .then(result => {
-    console.log('connected to MONGODB')
+    logger.info('connected to MONGODB')
   })
   .catch(error =>{
-    console.log('error connecting to MONGODB:',error.message)
+    logger.info('error connecting to MONGODB:',error.message)
   })
 
 module.exports = mongoose.model('Blog', blogSchema)
