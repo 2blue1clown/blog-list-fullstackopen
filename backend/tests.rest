@@ -5,7 +5,7 @@ POST http://localhost:3003/api/blogs
 Content-Type: application/json
 
 {
-  "title": "Harry Potter",
+  "title": "Mobey PP",
   "author": "J. K. Rolling",
   "url": "localhost:2000",
   "likes": 10
